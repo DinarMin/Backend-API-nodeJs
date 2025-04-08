@@ -81,7 +81,7 @@ app.get("/api/protected", Auth, async (req, res) => {
 
 /* Обработка запроса на получение данных о погоде, в теле запроса отправляется название города  */
 
-app.get("/weatherMe", Auth, async (req, res) => {
+app.post("/weatherMe", Auth, async (req, res) => {
   try {
     const city = req.body.city;
     const response = await axios.get(
