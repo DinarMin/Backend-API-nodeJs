@@ -9,10 +9,18 @@ import axios from "axios";
 import User from "./models/User.js";
 import { Auth } from "../utils/auth.js";
 import Task from "./models/Task.js";
+import {
+  registerSchema,
+  loginSchema,
+  weatherSchema,
+  taskSchema,
+} from "../validations/validation.js";
+import logger from "../utils/logger.js";
 
 dotenv.config();
 
 /* Создаем приложение на express */
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -31,6 +39,17 @@ async function startDB() {
 
 startDB();
 
+/* Функция валидации принимаемых данных */
+
+const validate = (schema) => (req, res, next) => {
+  const { error } = schema.validate(req.body || req.params);
+  if (error) {
+    logger.warn(`Validation failed: ${error.details[0].message}`);
+    return res.status(400).json({ error: error.details[0].message });
+  }
+  console.log(" Валидация прошла успешно! ");
+  next();
+};
 /* Принимает данные */
 
 app.post("/", async (req, res) => {
@@ -39,12 +58,22 @@ app.post("/", async (req, res) => {
     if (email.length > 0) {
       if (name) {
         // При регистрации принимает данные и сохраняет в БД
+        const { error } = registerSchema.validate({ name, email, password });
+        if (error) {
+          return res.status(400).json({ error: error.details[0].message });
+        }
+        logger.info("Валидация на регистрацию прошла успешно!");
+        console.log("Валидация прошла успешно!");
         const hashedPassword = await bcrypt.hash(password, 10);
         const user = new User({ name, email, password: hashedPassword });
         await user.save();
         res.json({ message: "User registered" });
       } else {
         // При авторизации принимает данные и проверяет и назначает token
+        const { error } = loginSchema.validate({ email, password });
+        if (error) {
+          return res.status(400).json({ error: error.details[0].message });
+        }
         const user = await User.findOne({ email });
         if (!user || !(await bcrypt.compare(password, user.password))) {
           return res.status(401).json({ error: "Неверный пароль или логин!" });
@@ -74,6 +103,7 @@ app.get("/api/protected", Auth, async (req, res) => {
       timestaps: user.createdAt,
     });
     console.log("Все хорошо, запрос был доставлен и обработан");
+    logger.info()
   } catch (err) {
     console.error(err);
   }
@@ -81,7 +111,7 @@ app.get("/api/protected", Auth, async (req, res) => {
 
 /* Обработка запроса на получение данных о погоде, в теле запроса отправляется название города  */
 
-app.post("/weatherMe", Auth, async (req, res) => {
+app.post("/weatherMe", Auth, validate(weatherSchema), async (req, res) => {
   try {
     const city = req.body.city;
     const response = await axios.get(
@@ -100,7 +130,7 @@ app.post("/weatherMe", Auth, async (req, res) => {
 
 /* Добавление задачи в БД */
 
-app.post("/taskNest", Auth, async (req, res) => {
+app.post("/taskNest", Auth, validate(taskSchema), async (req, res) => {
   try {
     const { text } = req.body;
     const task = new Task({ text, userId: req.userId });
@@ -154,5 +184,3 @@ app.delete("/taskNest", Auth, async (req, res) => {
   }
   res.json({ message: "Задача успешно удалена!" });
 });
-
-
