@@ -16,6 +16,7 @@ import {
   taskSchema,
 } from "../validations/validation.js";
 import logger from "../utils/logger.js";
+import checkPermissions from "../utils/rbac.js";
 
 dotenv.config();
 
@@ -43,18 +44,23 @@ startDB();
 
 const validate = (schema) => (req, res, next) => {
   const { error } = schema.validate(req.body || req.params);
+  const text = req.body.text;
   if (error) {
     logger.warn(`Validation failed: ${error.details[0].message}`);
     return res.status(400).json({ error: error.details[0].message });
   }
   console.log(" Валидация прошла успешно! ");
+  if (text) {
+    logger.info(`Валидация прошла успешно! text: ${text}`);
+  }
   next();
 };
-/* Принимает данные */
+
+/* Принимает данные для регистрации и авторизации*/
 
 app.post("/", async (req, res) => {
   try {
-    const { name, email, password } = req.body;
+    const { name, email, password, role } = req.body;
     if (email.length > 0) {
       if (name) {
         // При регистрации принимает данные и сохраняет в БД
@@ -62,11 +68,15 @@ app.post("/", async (req, res) => {
         if (error) {
           return res.status(400).json({ error: error.details[0].message });
         }
-        logger.info("Валидация на регистрацию прошла успешно!");
-        console.log("Валидация прошла успешно!");
         const hashedPassword = await bcrypt.hash(password, 10);
-        const user = new User({ name, email, password: hashedPassword });
+        const user = new User({
+          name,
+          email,
+          password: hashedPassword,
+          role: role || "user",
+        });
         await user.save();
+        logger.info(`Регистрация прошла успешно! email: ${user.email}`);
         res.json({ message: "User registered" });
       } else {
         // При авторизации принимает данные и проверяет и назначает token
@@ -81,6 +91,7 @@ app.post("/", async (req, res) => {
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
           expiresIn: "1d",
         });
+        logger.info(`Авторизация прошла успешно! email: ${email}`);
         res.json({ token });
       }
     } else {
@@ -103,7 +114,7 @@ app.get("/api/protected", Auth, async (req, res) => {
       timestaps: user.createdAt,
     });
     console.log("Все хорошо, запрос был доставлен и обработан");
-    logger.info()
+    logger.info();
   } catch (err) {
     console.error(err);
   }
@@ -184,3 +195,27 @@ app.delete("/taskNest", Auth, async (req, res) => {
   }
   res.json({ message: "Задача успешно удалена!" });
 });
+
+app.get(
+  "/api/admin/users",
+  Auth,
+  checkPermissions("users:read"),
+  async (req, res) => {
+    const users = await User.find();
+    logger.info(`Admin ${req.userId} fetched all users`);
+    res.status(200).json(users);
+  }
+);
+
+app.get(
+  "/api/admin/tasks",
+  Auth,
+  checkPermissions("tasks:manage"),
+  async (req, res) => {
+    const tasks = await Task.find();
+    logger.info(`Admin ${req.userId} fetched all tasks`);
+    res.status(200).json(tasks);
+  }
+);
+
+

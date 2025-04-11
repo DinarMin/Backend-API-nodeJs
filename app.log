@@ -1,2 +1,28 @@
 {"level":"warn","message":"Validation failed: \"city\" length must be at least 3 characters long","timestamp":"2025-04-09T10:57:02.200Z"}
 {"level":"info","message":"Валидация на регистрацию прошла успешно!","timestamp":"2025-04-09T10:58:22.743Z"}
+{"level":"info","message":"Валидация на регистрацию прошла успешно!","timestamp":"2025-04-09T13:31:11.407Z"}
+{"level":"info","message":"Валидация на регистрацию прошла успешно!","timestamp":"2025-04-09T13:31:53.967Z"}
+{"level":"info","message":"Регистрация прошла успешно! email:DD222@gmail.com","timestamp":"2025-04-09T13:33:34.155Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: DD252@gmail.com","timestamp":"2025-04-09T13:41:18.978Z"}
+{"level":"info","message":"Валидация прошла успешно! text: Сделать зарядку6","timestamp":"2025-04-09T14:19:13.728Z"}
+{"level":"info","message":"","timestamp":"2025-04-11T07:44:49.451Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: DD252@gmail.com","timestamp":"2025-04-11T07:46:57.569Z"}
+{"level":"info","message":"","timestamp":"2025-04-11T07:47:10.066Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: AAA@gmail.com","timestamp":"2025-04-11T10:13:23.278Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: AAA@gmail.com","timestamp":"2025-04-11T10:15:16.638Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: AAA@gmail.com","timestamp":"2025-04-11T10:17:32.312Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: AAA@gmail.com","timestamp":"2025-04-11T10:18:56.453Z"}
+{"level":"info","message":"Permission check passed for 67f8ec3b506e4a52c3e49964: users:read","timestamp":"2025-04-11T10:20:33.859Z"}
+{"level":"info","message":"Admin 67f8ec3b506e4a52c3e49964 fetched all users","timestamp":"2025-04-11T10:20:34.060Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: DD222@gmail.com","timestamp":"2025-04-11T10:22:04.768Z"}
+{"level":"warn","message":"Access denied for 67f6772df75a3274402a99e4: required users:read, role: user","timestamp":"2025-04-11T10:22:18.668Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: AAA@gmail.com","timestamp":"2025-04-11T10:22:45.143Z"}
+{"level":"info","message":"Permission check passed for 67f8ec3b506e4a52c3e49964: users:read","timestamp":"2025-04-11T10:22:57.620Z"}
+{"level":"info","message":"Admin 67f8ec3b506e4a52c3e49964 fetched all users","timestamp":"2025-04-11T10:22:57.823Z"}
+{"level":"info","message":"Permission check passed for 67f8ec3b506e4a52c3e49964: tasks:manage","timestamp":"2025-04-11T10:26:01.118Z"}
+{"level":"info","message":"Admin 67f8ec3b506e4a52c3e49964 fetched all tasks","timestamp":"2025-04-11T10:26:01.307Z"}
+{"level":"info","message":"Permission check passed for 67f8ec3b506e4a52c3e49964: tasks:manage","timestamp":"2025-04-11T10:26:22.493Z"}
+{"level":"info","message":"Admin 67f8ec3b506e4a52c3e49964 fetched all tasks","timestamp":"2025-04-11T10:26:22.687Z"}
+{"level":"error","message":"User nod found: undefined","timestamp":"2025-04-11T10:27:07.171Z"}
+{"level":"info","message":"Permission check passed for 67f8ec3b506e4a52c3e49964: tasks:manage","timestamp":"2025-04-11T10:27:24.209Z"}
+{"level":"info","message":"Admin 67f8ec3b506e4a52c3e49964 fetched all tasks","timestamp":"2025-04-11T10:27:24.406Z"}
