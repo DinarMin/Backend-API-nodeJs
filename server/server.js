@@ -17,6 +17,7 @@ import {
 } from "../validations/validation.js";
 import logger from "../utils/logger.js";
 import checkPermissions from "../utils/rbac.js";
+import { startDBpostgres, pool } from "../db/postgres.js";
 
 dotenv.config();
 
@@ -27,18 +28,22 @@ app.use(cors());
 app.use(express.json());
 app.listen(3000, () => console.log("Server on port 3000")); // Запускаем сервер на 3000 порту.
 
-/* Подключение к базы данных */
+/* Подключение к базы данных MongoDB */
 
 async function startDB() {
   try {
     await mongoose.connect(process.env.DBURL);
-    console.log("Успешно подключена к базам данных");
+    console.log("Успешно подключена к MongoDB");
   } catch (e) {
     console.log(e + "Подключение прервано");
   }
 }
 
 startDB();
+
+/* Подключение к базы данных PostgreSQL */
+
+startDBpostgres();
 
 /* Функция валидации принимаемых данных */
 
@@ -69,14 +74,11 @@ app.post("/", async (req, res) => {
           return res.status(400).json({ error: error.details[0].message });
         }
         const hashedPassword = await bcrypt.hash(password, 10);
-        const user = new User({
-          name,
-          email,
-          password: hashedPassword,
-          role: role || "user",
-        });
-        await user.save();
-        logger.info(`Регистрация прошла успешно! email: ${user.email}`);
+        await pool.query(
+          "INSERT INTO users (name, email, password, role) VALUES ($1, $2, $3, $4) RETURNING id",
+          [name, email, hashedPassword, role || "user"]
+        );
+        await logger.info(`Регистрация прошла успешно! email: ${email}`);
         res.json({ message: "User registered" });
       } else {
         // При авторизации принимает данные и проверяет и назначает token
@@ -196,6 +198,8 @@ app.delete("/taskNest", Auth, async (req, res) => {
   res.json({ message: "Задача успешно удалена!" });
 });
 
+/* Запрос список всех юзеров по админ роли */
+
 app.get(
   "/api/admin/users",
   Auth,
@@ -207,6 +211,8 @@ app.get(
   }
 );
 
+/* Запрос список всех задач по админ роли */
+
 app.get(
   "/api/admin/tasks",
   Auth,
@@ -217,5 +223,3 @@ app.get(
     res.status(200).json(tasks);
   }
 );
-
-

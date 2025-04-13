@@ -26,3 +26,7 @@
 {"level":"error","message":"User nod found: undefined","timestamp":"2025-04-11T10:27:07.171Z"}
 {"level":"info","message":"Permission check passed for 67f8ec3b506e4a52c3e49964: tasks:manage","timestamp":"2025-04-11T10:27:24.209Z"}
 {"level":"info","message":"Admin 67f8ec3b506e4a52c3e49964 fetched all tasks","timestamp":"2025-04-11T10:27:24.406Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: Postgresss@gmail.com","timestamp":"2025-04-13T11:31:18.278Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: Postgressss@gmail.com","timestamp":"2025-04-13T11:32:22.583Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: Postgres@gmail.com","timestamp":"2025-04-13T11:34:20.163Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: Postgres2@gmail.com","timestamp":"2025-04-13T11:34:51.805Z"}
