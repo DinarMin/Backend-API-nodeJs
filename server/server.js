@@ -82,12 +82,15 @@ app.post("/", async (req, res) => {
         if (error) {
           return res.status(400).json({ error: error.details[0].message });
         }
-        const result = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
+        const result = await pool.query(
+          "SELECT * FROM users WHERE email = $1",
+          [email]
+        );
         const user = result.rows[0];
         if (!user || !(await bcrypt.compare(password, user.password))) {
           return res.status(401).json({ error: "Неверный пароль или логин!" });
         }
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+        const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
           expiresIn: "1d",
         });
         logger.info(`Авторизация прошла успешно! email: ${email}`);
@@ -106,11 +109,13 @@ app.post("/", async (req, res) => {
 
 app.get("/api/protected", Auth, async (req, res) => {
   try {
-    const user = await User.findById(req.userId);
+    const result = await pool.query("SELECT * FROM users WHERE id = $1", [
+      req.userId,
+    ]);
+    const user = result.rows[0];
     await res.json({
-      message: "Cool!",
-      userId: req.userId,
-      timestaps: user.createdAt,
+      userID: user.id,
+      create: user.created_at,
     });
     console.log("Все хорошо, запрос был доставлен и обработан");
     logger.info();

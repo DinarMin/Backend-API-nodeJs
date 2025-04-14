@@ -1,5 +1,6 @@
 import logger from "./logger.js";
 import User from "../server/models/User.js";
+import pool from "../db/postgres.js";
 
 const permissions = {
   admin: ["users:read", "tasks:manage"],
@@ -7,7 +8,8 @@ const permissions = {
 };
 
 const checkPermissions = (permission) => async (req, res, next) => {
-  const user = await User.findById(req.userId);
+  const result = await pool.query('SELECT role FROM users WHERE id = $1', [req.userId]);
+  const user = result.rows[0];
   if (!user) {
     logger.error(`User nod found: ${req.userId}`);
     return res.status(404).json({ error: "User not found" });
