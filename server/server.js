@@ -195,8 +195,11 @@ app.put("/taskNest", Auth, async (req, res) => {
 /* Удаление задачи из БД */
 
 app.delete("/taskNest", Auth, async (req, res) => {
-  const task = await Task.findOneAndDelete({ _id: req.body.id });
-  if (!task) {
+  const result = await pool.query(
+    "DELETE FROM tasks WHERE id= $1 AND user_id= $2 RETURNING *",
+    [req.body.id, req.userId]
+  );
+  if (!result.rows[0]) {
     return res.status(404).json({
       message: "Произошла ошибка, задача не найдена в базе данных!",
     });
