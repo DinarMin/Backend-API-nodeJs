@@ -5,14 +5,12 @@ dotenv.config();
 
 const { Pool } = pg;
 const pool = new Pool();
+export default pool;
 
-const startDBpostgres = async () => {
-  try {
-    const client = await pool.connect();
-    console.log("Успешное подключение к PostgreSQL");
-  } catch (error) {
-    console.log("Не удалось подключиться к базам данных PostgreSQL: " + error);
-  }
-};
+pool.on("connect", () => {
+  console.log("Успешный запрос к базам PostgreSQL");
+});
 
-export {startDBpostgres, pool};
+pool.on("error", () => {
+  console.log("Ошибка подключение к базам PostgreSQL");
+});

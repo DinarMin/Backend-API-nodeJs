@@ -17,7 +17,7 @@ import {
 } from "../validations/validation.js";
 import logger from "../utils/logger.js";
 import checkPermissions from "../utils/rbac.js";
-import { startDBpostgres, pool } from "../db/postgres.js";
+import pool from "../db/postgres.js";
 
 dotenv.config();
 
@@ -40,10 +40,6 @@ async function startDB() {
 }
 
 startDB();
-
-/* Подключение к базы данных PostgreSQL */
-
-startDBpostgres();
 
 /* Функция валидации принимаемых данных */
 
@@ -86,7 +82,8 @@ app.post("/", async (req, res) => {
         if (error) {
           return res.status(400).json({ error: error.details[0].message });
         }
-        const user = await User.findOne({ email });
+        const result = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
+        const user = result.rows[0];
         if (!user || !(await bcrypt.compare(password, user.password))) {
           return res.status(401).json({ error: "Неверный пароль или логин!" });
         }
