@@ -39,7 +39,7 @@ async function startDB() {
   }
 }
 
-startDB();
+// startDB();
 
 /* Функция валидации принимаемых данных */
 
@@ -147,10 +147,12 @@ app.post("/weatherMe", Auth, validate(weatherSchema), async (req, res) => {
 
 app.post("/taskNest", Auth, validate(taskSchema), async (req, res) => {
   try {
-    const { text } = req.body;
-    const task = new Task({ text, userId: req.userId });
-    await task.save();
-    res.json({ message: "Задача успешно добавлена" });
+    const { title } = req.body;
+    const result = await pool.query(
+      "INSERT INTO tasks (title, user_id) VALUES ($1, $2) RETURNING *",
+      [title, req.userId]
+    );
+    res.json({ message: "Задача успешно добавлена", result: result.rows[0] });
   } catch (err) {
     console.log(err);
   }
@@ -160,8 +162,10 @@ app.post("/taskNest", Auth, validate(taskSchema), async (req, res) => {
 
 app.get("/taskNest", Auth, async (req, res) => {
   try {
-    const tasks = await Task.find({ userId: req.userId });
-    res.json(tasks);
+    const result = await pool.query("SELECT * FROM tasks WHERE user_id=$1", [
+      req.userId,
+    ]);
+    res.json(result.rows);
   } catch (error) {
     console.log(error);
   }
@@ -171,18 +175,18 @@ app.get("/taskNest", Auth, async (req, res) => {
 
 app.put("/taskNest", Auth, async (req, res) => {
   try {
-    const { status } = req.body;
-    const task = await Task.findOneAndUpdate(
-      { _id: req.body.id },
-      { status },
-      { new: true }
+    const { status, taskId } = req.body;
+    const result = await pool.query(
+      "UPDATE tasks SET status=$1 WHERE id=$2 AND user_id=$3 RETURNING *",
+      [status, taskId, req.userId]
     );
-    if (!task) {
+    const task = result.rows;
+    if (task.length === 0) {
       return res.status(404).json({
         message: "Произошла ошибка, задача не найдена в базе данных!",
       });
     }
-    res.json({ status: status });
+    res.json({ task: task });
   } catch (error) {
     console.log(error);
   }

@@ -53,3 +53,8 @@
 {"level":"info","message":"","timestamp":"2025-04-14T07:15:48.680Z"}
 {"level":"info","message":"","timestamp":"2025-04-14T07:18:44.419Z"}
 {"level":"info","message":"","timestamp":"2025-04-14T07:19:42.993Z"}
+{"level":"warn","message":"Validation failed: \"text\" is required","timestamp":"2025-04-14T10:46:23.899Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-14T10:46:30.419Z"}
+{"level":"warn","message":"Validation failed: \"text\" is required","timestamp":"2025-04-14T10:46:50.993Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres@gmail.com","timestamp":"2025-04-14T10:48:38.213Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-14T11:02:04.453Z"}

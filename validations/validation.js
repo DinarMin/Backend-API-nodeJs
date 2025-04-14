@@ -13,7 +13,7 @@ export const loginSchema = Joi.object({
 });
 
 export const taskSchema = Joi.object({
-  text: Joi.string().min(2).required(),
+  title: Joi.string().min(2).required(),
 });
 
 export const weatherSchema = Joi.object({
