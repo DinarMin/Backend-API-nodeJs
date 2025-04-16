@@ -18,6 +18,7 @@ import {
 import logger from "../utils/logger.js";
 import checkPermissions from "../utils/rbac.js";
 import pool from "../db/postgres.js";
+import routesCalculation from "../routes/calculator.js";
 
 dotenv.config();
 
@@ -263,3 +264,7 @@ app.get(
     res.status(200).json(tasks);
   }
 );
+
+/* Обработка запроса с роутом Калькулятор */
+
+app.use("/api/calculate", routesCalculation);

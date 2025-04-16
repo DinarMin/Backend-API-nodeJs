@@ -64,3 +64,6 @@
 {"level":"info","message":"Weather fetched: Koshki, 15.7°C for user 9","timestamp":"2025-04-16T08:26:01.783Z"}
 {"level":"info","message":"Weather fetched: Moscow, 17.4°C for user 9","timestamp":"2025-04-16T08:26:09.331Z"}
 {"level":"info","message":"Запрос список истории запросов погоды предоставлено! user: 9","timestamp":"2025-04-16T08:36:05.454Z"}
+{"level":"info","message":"Calculated add(5, 3) = 8","timestamp":"2025-04-16T14:21:00.167Z"}
+{"level":"info","message":"Calculated add(5, 10) = 15","timestamp":"2025-04-16T14:21:06.378Z"}
+{"level":"warn","message":"На ноль делить нельзя!!!","timestamp":"2025-04-16T14:21:23.003Z"}
