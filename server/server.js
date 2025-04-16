@@ -65,6 +65,7 @@ app.post("/", async (req, res) => {
     if (email.length > 0) {
       if (name) {
         // При регистрации принимает данные и сохраняет в БД
+
         const { error } = registerSchema.validate({ name, email, password });
         if (error) {
           return res.status(400).json({ error: error.details[0].message });
@@ -78,6 +79,7 @@ app.post("/", async (req, res) => {
         res.json({ message: "User registered" });
       } else {
         // При авторизации принимает данные и проверяет и назначает token
+
         const { error } = loginSchema.validate({ email, password });
         if (error) {
           return res.status(400).json({ error: error.details[0].message });
@@ -132,12 +134,41 @@ app.post("/weatherMe", Auth, validate(weatherSchema), async (req, res) => {
     const response = await axios.get(
       `https://api.weatherapi.com/v1/current.json?key=${process.env.API_KEY}&q=${city}`
     );
-    res.json({
+    const data = {
       city: response.data.location.name,
       temp: response.data.current.temp_c,
-    });
+    };
+    await pool.query(
+      "INSERT INTO weather_history (city, temp, user_id) VALUES ($1, $2, $3) ",
+      [data.city, data.temp, req.userId]
+    );
+    logger.info(
+      `Weather fetched: ${data.city}, ${data.temp}°C for user ${req.userId}`
+    );
+    res.json(data);
   } catch (err) {
-    res.status(404).json({ error: err.message });
+    logger.error(`Weather error: ${err.message}`);
+    res.status(500).json({ error: "Weather fetch failed" });
+  }
+});
+
+/* Получение истории погоды  */
+
+app.get("/weatherMe/history", Auth, async (req, res) => {
+  try {
+    const result = await pool.query(
+      "SELECT city, temp, created_at FROM weather_history WHERE user_id = $1 ORDER BY created_at DESC",
+      [req.userId]
+    );
+    logger.info(
+      `Запрос список истории запросов погоды предоставлено! user: ${req.userId}`
+    );
+    res.status(200).json(result.rows);
+  } catch (error) {
+    logger.warn(
+      `Не удалось получить список истории запросов погоды! user: ${req.userId}`
+    );
+    res.status(404).json(error);
   }
 });
 

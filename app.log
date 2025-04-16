@@ -58,3 +58,9 @@
 {"level":"warn","message":"Validation failed: \"text\" is required","timestamp":"2025-04-14T10:46:50.993Z"}
 {"level":"info","message":"Авторизация прошла успешно! email: Postgres@gmail.com","timestamp":"2025-04-14T10:48:38.213Z"}
 {"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-14T11:02:04.453Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-16T08:24:41.605Z"}
+{"level":"info","message":"Weather fetched: Kazan, 17.1°C for user 9","timestamp":"2025-04-16T08:25:03.512Z"}
+{"level":"info","message":"Weather fetched: Samara, 18.4°C for user 9","timestamp":"2025-04-16T08:25:41.983Z"}
+{"level":"info","message":"Weather fetched: Koshki, 15.7°C for user 9","timestamp":"2025-04-16T08:26:01.783Z"}
+{"level":"info","message":"Weather fetched: Moscow, 17.4°C for user 9","timestamp":"2025-04-16T08:26:09.331Z"}
+{"level":"info","message":"Запрос список истории запросов погоды предоставлено! user: 9","timestamp":"2025-04-16T08:36:05.454Z"}
