@@ -19,6 +19,7 @@ import logger from "../utils/logger.js";
 import checkPermissions from "../utils/rbac.js";
 import pool from "../db/postgres.js";
 import routesCalculation from "../routes/calculator.js";
+import emailQueue from "../queues/emailQueue.js";
 
 dotenv.config();
 
@@ -184,6 +185,11 @@ app.post("/taskNest", Auth, validate(taskSchema), async (req, res) => {
       "INSERT INTO tasks (title, user_id) VALUES ($1, $2) RETURNING *",
       [title, req.userId]
     );
+    await emailQueue.add({
+      userId: req.userId,
+      message: `Task "${title}" created successfully`,
+    });
+    logger.info(`Task created: ${title} by user ${req.userId}`);
     res.json({ message: "Задача успешно добавлена", result: result.rows[0] });
   } catch (err) {
     console.log(err);

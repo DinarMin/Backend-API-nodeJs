@@ -67,3 +67,133 @@
 {"level":"info","message":"Calculated add(5, 3) = 8","timestamp":"2025-04-16T14:21:00.167Z"}
 {"level":"info","message":"Calculated add(5, 10) = 15","timestamp":"2025-04-16T14:21:06.378Z"}
 {"level":"warn","message":"На ноль делить нельзя!!!","timestamp":"2025-04-16T14:21:23.003Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:09.913Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:09.998Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:10.083Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:10.163Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:10.247Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:10.328Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:10.409Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:10.500Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:10.584Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:10.669Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T07:45:49.339Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:05.028Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:26.760Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:26.948Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:27.138Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:27.330Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:27.522Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:27.719Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:27.919Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:28.107Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:28.300Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:28.490Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:45.279Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:45.471Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:45.677Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:45.870Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:46.064Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:46.260Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:46.452Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:46.651Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:46.845Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:47.040Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:47.232Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:47.422Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:47.613Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:47.829Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:48.022Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:48.218Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:48.412Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:48.608Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:48.813Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:49.010Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:49.203Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:49.400Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:49.602Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:49.798Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:50.000Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:50.193Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:50.385Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:50.584Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:50.777Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:50.973Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:51.171Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:51.375Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:51.570Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:51.766Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:51.963Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:52.157Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:52.394Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:52.588Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:52.790Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:52.989Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:53.179Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:53.429Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:53.625Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:53.820Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:54.023Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:54.219Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:54.417Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:54.617Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:54.814Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:55.007Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:55.202Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:55.404Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:55.610Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:55.807Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:56.005Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:56.203Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:56.478Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:56.684Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:56.882Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:57.081Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:57.291Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:57.482Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:57.701Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:57.898Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:58.096Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:58.302Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:58.496Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:58.688Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:58.884Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:59.078Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:59.279Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:59.479Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:59.679Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:46:59.874Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:00.067Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:00.260Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:00.464Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:00.660Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:00.859Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:01.056Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:01.251Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:01.603Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:01.840Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:02.033Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:02.230Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:02.427Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:02.622Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:02.815Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:03.019Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:03.215Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:03.409Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:03.611Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:03.805Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:04.000Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:04.196Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:04.402Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:04.603Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:04.796Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:04.986Z"}
+{"level":"info","message":"Weather fetched: Moscow, 15.2°C for user 9","timestamp":"2025-04-17T07:47:05.188Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-17T11:20:06.069Z"}
+
+{"level":"info","message":"Task created: тестовое для bull  2 by user 9","timestamp":"2025-04-17T11:22:00.640Z"}
+{"level":"info","message":"Processing email for user 9: Task \"тестовое для bull  2\" created successfully","timestamp":"2025-04-17T11:22:00.644Z"}
+{"level":"info","message":"Email job completed for user 9: sent","timestamp":"2025-04-17T11:22:01.660Z"}
+{"level":"info","message":"Task created: тестовое для bull  2 by user 9","timestamp":"2025-04-17T11:22:47.996Z"}
+{"level":"info","message":"Processing email for user 9: Task \"тестовое для bull  2\" created successfully","timestamp":"2025-04-17T11:22:48.001Z"}
+{"level":"info","message":"Email job completed for user 9: sent","timestamp":"2025-04-17T11:22:49.007Z"}
