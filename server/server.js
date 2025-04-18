@@ -5,6 +5,9 @@ import bcrypt from "bcryptjs";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import axios from "axios";
+import fs from "fs";
+import https from "https";
+import http from 'http';
 
 import User from "./models/User.js";
 import { Auth } from "../utils/auth.js";
@@ -21,14 +24,32 @@ import pool from "../db/postgres.js";
 import routesCalculation from "../routes/calculator.js";
 import emailQueue from "../queues/emailQueue.js";
 
+const app = express();
+
 dotenv.config();
+
+const options = {
+  key: fs.readFileSync("key.pem"),
+  cert: fs.readFileSync("cert.pem"),
+};
+
+https.createServer(options, app).listen(443, () => {
+  console.log("Server on port 443 (HTTPS)");
+});
+
+http.createServer(app).listen(3000, () => {
+  console.log("Server on port 3000 (HTTP)");
+});
 
 /* Создаем приложение на express */
 
-const app = express();
 app.use(cors());
 app.use(express.json());
-app.listen(3000, () => console.log("Server on port 3000")); // Запускаем сервер на 3000 порту.
+
+// app.listen(3000, () => {
+//   logger.info("Сервер успешно запущен на 3000 порту");
+//   console.log("Server on port 3000");
+// });
 
 /* Подключение к базы данных MongoDB */
 

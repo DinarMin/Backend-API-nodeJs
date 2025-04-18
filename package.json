@@ -12,10 +12,13 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@bull-board/api": "^6.9.1",
+    "@bull-board/express": "^6.9.1",
     "axios": "^1.8.4",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^3.0.2",
     "bull": "^4.16.5",
+    "bullmq": "^5.49.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",

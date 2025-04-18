@@ -9,7 +9,6 @@ const emailQueue = new Queue("email", {
 });
 
 emailQueue.process(async (job) => {
-  console.log("JOB=>>>>>>" + JSON.stringify(job));
   const { userId, message } = job.data;
   logger.info(`Processing email for user ${userId}: ${message}`);
   await new Promise((resolve) => setTimeout(resolve, 1000));

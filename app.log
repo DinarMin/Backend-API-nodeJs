@@ -197,3 +197,14 @@
 {"level":"info","message":"Task created: тестовое для bull  2 by user 9","timestamp":"2025-04-17T11:22:47.996Z"}
 {"level":"info","message":"Processing email for user 9: Task \"тестовое для bull  2\" created successfully","timestamp":"2025-04-17T11:22:48.001Z"}
 {"level":"info","message":"Email job completed for user 9: sent","timestamp":"2025-04-17T11:22:49.007Z"}
+{"level":"info","message":"Сервер успешно запущен на 3000 порту","timestamp":"2025-04-17T11:31:31.364Z"}
+{"level":"info","message":"Сервер успешно запущен на 3000 порту","timestamp":"2025-04-17T13:11:34.151Z"}
+{"level":"info","message":"Сервер успешно запущен на 3000 порту","timestamp":"2025-04-17T13:17:26.411Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:22.355Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:25.945Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:26.559Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:27.185Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:27.643Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:28.068Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:28.483Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:28.917Z"}
