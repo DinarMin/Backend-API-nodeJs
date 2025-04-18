@@ -126,7 +126,7 @@ app.post("/", async (req, res) => {
     }
   } catch (error) {
     res.status(404).json({ error });
-    console.log("Произошла ошибка ->" + error);
+    console.log("Произошла ошибка ->", error);
   }
 });
 
