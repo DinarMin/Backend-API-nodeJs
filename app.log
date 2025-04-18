@@ -208,3 +208,4 @@
 {"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:28.068Z"}
 {"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:28.483Z"}
 {"level":"info","message":"Авторизация прошла успешно! email: Postgres4@gmail.com","timestamp":"2025-04-18T08:45:28.917Z"}
+{"level":"info","message":"Сервер успешно запущен на 3000 порту","timestamp":"2025-04-18T09:06:19.337Z"}
