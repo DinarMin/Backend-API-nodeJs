@@ -23,8 +23,8 @@ import checkPermissions from "../utils/rbac.js";
 import pool from "../db/postgres.js";
 import routesCalculation from "../routes/calculator.js";
 import emailQueue from "../queues/emailQueue.js";
-
 const app = express();
+
 
 dotenv.config();
 
@@ -62,7 +62,7 @@ async function startDB() {
   }
 }
 
-startDB();
+// startDB();
 
 /* Функция валидации принимаемых данных */
 
