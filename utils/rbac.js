@@ -1,5 +1,5 @@
 import logger from "./logger.js";
-import User from "../server/models/User.js";
+import User from "../models/User.js";
 import pool from "../db/postgres.js";
 
 const permissions = {
