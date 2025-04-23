@@ -412,3 +412,176 @@
 {"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-22T09:35:29.641Z"}
 {"level":"warn","message":"Ошибка валидации: [object Object]","timestamp":"2025-04-22T09:35:29.649Z"}
 {"level":"info","message":"Авторизация прошла успешно! email: test2@gmail.net","timestamp":"2025-04-22T09:35:29.807Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-22T12:02:49.021Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-22T12:02:49.110Z"}
+{"level":"warn","message":"Ошибка валидации: [object Object]","timestamp":"2025-04-22T12:02:49.124Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: test2@gmail.net","timestamp":"2025-04-22T12:02:49.762Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-22T12:04:26.541Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-22T12:04:26.615Z"}
+{"level":"warn","message":"Ошибка валидации: [object Object]","timestamp":"2025-04-22T12:04:26.622Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: test2@gmail.net","timestamp":"2025-04-22T12:04:26.769Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-22T12:58:37.131Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-22T12:58:37.207Z"}
+{"level":"warn","message":"Ошибка валидации: [object Object]","timestamp":"2025-04-22T12:58:37.218Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: test2@gmail.net","timestamp":"2025-04-22T12:58:37.383Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: Postgres9@gmail.com","timestamp":"2025-04-22T13:44:56.988Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres9@gmail.com","timestamp":"2025-04-22T13:45:06.090Z"}
+{"level":"info","message":"Task created: тестовое 1234124 by user 95","timestamp":"2025-04-22T13:53:19.053Z"}
+{"level":"info","message":"Task created: тестовое 1234124 by user 95","timestamp":"2025-04-22T13:53:19.055Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 95","timestamp":"2025-04-22T13:53:19.056Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 95","timestamp":"2025-04-22T13:53:19.058Z"}
+{"level":"info","message":"Processing email for user 95: Task \"тестовое 1234124\" created successfully","timestamp":"2025-04-22T13:53:19.068Z"}
+{"level":"info","message":"Email job completed for user 95: sent","timestamp":"2025-04-22T13:53:20.070Z"}
+{"level":"info","message":"Processing email for user 95: Task \"тестовое 1234124\" created successfully","timestamp":"2025-04-22T13:53:20.071Z"}
+{"level":"info","message":"Email job completed for user 95: sent","timestamp":"2025-04-22T13:53:21.078Z"}
+{"level":"info","message":"Task created: тестовое 1234124 by user 95","timestamp":"2025-04-22T13:53:35.944Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 95","timestamp":"2025-04-22T13:53:35.945Z"}
+{"level":"info","message":"Processing email for user 95: Task \"тестовое 1234124\" created successfully","timestamp":"2025-04-22T13:53:35.950Z"}
+{"level":"info","message":"Email job completed for user 95: sent","timestamp":"2025-04-22T13:53:36.955Z"}
+{"level":"warn","message":"Не удалось создать задачу. userId: 95, INSERT или UPDATE в таблице \"tasks\" нарушает ограничение внешнего ключа \"tasks_user_id_fkey\"","timestamp":"2025-04-22T14:18:29.810Z"}
+{"level":"warn","message":"Не удалось создать задачу. userId: 95, INSERT или UPDATE в таблице \"tasks\" нарушает ограничение внешнего ключа \"tasks_user_id_fkey\"","timestamp":"2025-04-22T14:18:40.330Z"}
+{"level":"warn","message":"Не удалось создать задачу. userId: 95, INSERT или UPDATE в таблице \"tasks\" нарушает ограничение внешнего ключа \"tasks_user_id_fkey\"","timestamp":"2025-04-22T14:19:38.470Z"}
+{"level":"warn","message":"Не удалось создать задачу. userId: 95, INSERT или UPDATE в таблице \"tasks\" нарушает ограничение внешнего ключа \"tasks_user_id_fkey\"","timestamp":"2025-04-22T14:21:02.578Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: Postgres9@gmail.com","timestamp":"2025-04-22T14:21:49.594Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres9@gmail.com","timestamp":"2025-04-22T14:21:52.901Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:02.238Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:02.238Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:02.242Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:03.256Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:34.657Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:34.658Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:34.662Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:34.796Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:34.796Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:34.921Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:34.921Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:35.058Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:35.058Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:35.195Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:35.195Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:35.313Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:35.313Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:35.460Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:35.460Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:35.582Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:35.582Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:35.671Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:35.672Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:35.703Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:35.703Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:35.821Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:35.822Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:35.944Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:35.944Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:36.096Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:36.096Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:36.212Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:36.212Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:36.364Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:36.364Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:36.476Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:36.476Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 112","timestamp":"2025-04-22T14:22:36.596Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 112","timestamp":"2025-04-22T14:22:36.596Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:36.681Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:36.681Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:37.697Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:37.697Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:38.700Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:38.700Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:39.712Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:39.712Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:40.728Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:40.728Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:41.739Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:41.740Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:42.756Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:42.756Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:43.771Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:43.771Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:44.776Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:44.776Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:45.780Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:45.781Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:46.794Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:46.794Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:47.806Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:47.807Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:48.809Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:48.810Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:49.827Z"}
+{"level":"info","message":"Processing email for user 112: Task \"тестовое 12341242\" created successfully","timestamp":"2025-04-22T14:22:49.827Z"}
+{"level":"info","message":"Email job completed for user 112: sent","timestamp":"2025-04-22T14:22:50.835Z"}
+{"level":"warn","message":"Validation failed: \"userId\" is not allowed","timestamp":"2025-04-22T15:24:26.820Z"}
+{"level":"info","message":"Task created: Test Task by user 141","timestamp":"2025-04-22T15:29:03.068Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 141 [object Object]","timestamp":"2025-04-22T15:29:03.073Z"}
+{"level":"info","message":"Task created: Test Task by user 142","timestamp":"2025-04-22T15:32:05.767Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 142 [object Object]","timestamp":"2025-04-22T15:32:05.772Z"}
+{"level":"info","message":"Task created: Test Task by user 143","timestamp":"2025-04-23T06:11:09.646Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 143 [object Object]","timestamp":"2025-04-23T06:11:09.652Z"}
+{"level":"warn","message":"Произошла ошибка, задача не найдена в базе данных! userID: 143","timestamp":"2025-04-23T06:11:09.679Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 29","timestamp":"2025-04-23T06:11:09.680Z"}
+{"level":"info","message":"Task created: Test Task by user 144","timestamp":"2025-04-23T06:15:05.031Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 144 [object Object]","timestamp":"2025-04-23T06:15:05.034Z"}
+{"level":"warn","message":"Произошла ошибка, задача не найдена в базе данных! userID: 144","timestamp":"2025-04-23T06:15:05.064Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 12","timestamp":"2025-04-23T06:15:05.065Z"}
+{"level":"info","message":"Task created: Test Task by user 145","timestamp":"2025-04-23T06:16:41.534Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 145 [object Object]","timestamp":"2025-04-23T06:16:41.538Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 151","timestamp":"2025-04-23T06:16:41.570Z"}
+{"level":"info","message":"Task created: Test Task by user 146","timestamp":"2025-04-23T06:17:50.305Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 146 [object Object]","timestamp":"2025-04-23T06:17:50.308Z"}
+{"level":"info","message":"Task created: Test Task by user 147","timestamp":"2025-04-23T06:18:22.131Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 147 [object Object]","timestamp":"2025-04-23T06:18:22.134Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 157","timestamp":"2025-04-23T06:18:22.165Z"}
+{"level":"info","message":"Task created: Test Task by user 148","timestamp":"2025-04-23T06:18:56.666Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 148 [object Object]","timestamp":"2025-04-23T06:18:56.669Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 160","timestamp":"2025-04-23T06:18:56.701Z"}
+{"level":"info","message":"Task created: Test Task by user 149","timestamp":"2025-04-23T06:19:25.727Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 149 [object Object]","timestamp":"2025-04-23T06:19:25.731Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 163","timestamp":"2025-04-23T06:19:25.765Z"}
+{"level":"info","message":"Task created: Test Task by user 150","timestamp":"2025-04-23T06:19:42.692Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 150 [object Object]","timestamp":"2025-04-23T06:19:42.694Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 166","timestamp":"2025-04-23T06:19:42.719Z"}
+{"level":"info","message":"Task created: Test Task by user 151","timestamp":"2025-04-23T06:20:13.265Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 151 [object Object]","timestamp":"2025-04-23T06:20:13.268Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 169","timestamp":"2025-04-23T06:20:13.292Z"}
+{"level":"info","message":"Task created: Test Task by user 152","timestamp":"2025-04-23T06:24:34.248Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 152 [object Object]","timestamp":"2025-04-23T06:24:34.251Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 172","timestamp":"2025-04-23T06:24:34.276Z"}
+{"level":"info","message":"Task created: Test Task by user 153","timestamp":"2025-04-23T06:25:58.113Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 153 [object Object]","timestamp":"2025-04-23T06:25:58.116Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 176","timestamp":"2025-04-23T06:25:58.141Z"}
+{"level":"info","message":"Task created: Test Task by user 154","timestamp":"2025-04-23T06:27:19.815Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 154 [object Object]","timestamp":"2025-04-23T06:27:19.818Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 180","timestamp":"2025-04-23T06:27:19.843Z"}
+{"level":"info","message":"Task created: Test Task by user 155","timestamp":"2025-04-23T06:27:58.491Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 155 [object Object]","timestamp":"2025-04-23T06:27:58.494Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 184","timestamp":"2025-04-23T06:27:58.524Z"}
+{"level":"info","message":"Task created: Test Task by user 156","timestamp":"2025-04-23T06:28:23.089Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 156 [object Object]","timestamp":"2025-04-23T06:28:23.092Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 188","timestamp":"2025-04-23T06:28:23.117Z"}
+{"level":"info","message":"Task created: Test Task by user 157","timestamp":"2025-04-23T06:39:42.414Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 157 [object Object]","timestamp":"2025-04-23T06:39:42.417Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 192","timestamp":"2025-04-23T06:39:42.441Z"}
+{"level":"info","message":"Task created: Test Task by user 158","timestamp":"2025-04-23T06:40:34.854Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 158 [object Object]","timestamp":"2025-04-23T06:40:34.857Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 196","timestamp":"2025-04-23T06:40:34.881Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-23T06:40:35.529Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: TestJest@gmail.net","timestamp":"2025-04-23T06:40:35.600Z"}
+{"level":"warn","message":"Ошибка валидации: [object Object]","timestamp":"2025-04-23T06:40:35.608Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: test2@gmail.net","timestamp":"2025-04-23T06:40:35.770Z"}
+{"level":"info","message":"Task created: Test Task by user 162","timestamp":"2025-04-23T06:40:40.845Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 162 [object Object]","timestamp":"2025-04-23T06:40:40.849Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 200","timestamp":"2025-04-23T06:40:40.875Z"}
+{"level":"info","message":"Task created: Test Task by user 163","timestamp":"2025-04-23T06:41:43.569Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 163 [object Object]","timestamp":"2025-04-23T06:41:43.572Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 204","timestamp":"2025-04-23T06:41:43.597Z"}
+{"level":"info","message":"Task created: Test Task by user 164","timestamp":"2025-04-23T06:42:19.801Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 164 [object Object]","timestamp":"2025-04-23T06:42:19.804Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 208","timestamp":"2025-04-23T06:42:19.829Z"}
+{"level":"info","message":"Task created: Test Task by user 165","timestamp":"2025-04-23T06:43:52.420Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 165 [object Object]","timestamp":"2025-04-23T06:43:52.424Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 212","timestamp":"2025-04-23T06:43:52.448Z"}
+{"level":"info","message":"Task created: Test Task by user 166","timestamp":"2025-04-23T06:49:04.402Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 166 [object Object]","timestamp":"2025-04-23T06:49:04.405Z"}
+{"level":"info","message":"Статус задачи успешно обновлена. taskID: 216","timestamp":"2025-04-23T06:49:04.430Z"}

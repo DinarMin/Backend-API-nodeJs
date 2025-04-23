@@ -23,6 +23,7 @@ import routesCalculation from "../routes/calculator.js";
 import { userController } from "../controllers/userController.js";
 import {
   createTask,
+  deleteTask,
   getAllTask,
   updateStatus,
 } from "../controllers/taskController.js";
@@ -140,7 +141,7 @@ app.get("/taskNest", Auth, getAllTask);
 app.put("/taskNest", Auth, updateStatus);
 
 /* Удаление задачи из БД */
-app.delete("/taskNest", Auth);
+app.delete("/taskNest", Auth, deleteTask);
 
 /* Запрос список всех юзеров по админ роли */
 app.get(
@@ -168,3 +169,8 @@ app.get(
 
 /* Обработка запроса с роутом Калькулятор */
 app.use("/api/calculate", routesCalculation);
+
+app.use((err, req, res, next) => {
+  console.error("Необработанная ошибка:", err);
+  res.status(500).json({ error: err.message });
+});

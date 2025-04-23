@@ -1,15 +1,20 @@
-import emailQueue from "../queues/emailQueue.js";
+// import emailQueue from "../queues/emailQueue.js";
 import logger from "../utils/logger.js";
 import taskModel from "../models/PostgreSQL/taskModel.js";
 
 const createTask = async (title, userId) => {
-  const result = await taskModel.createTask(title, userId);
-  await emailQueue.add({
-    userId: userId,
-    message: `Task "${title}" created successfully`,
-  });
-  logger.info(`Task created: ${title} by user ${userId}`);
-  return result;
+  try {
+    const result = await taskModel.createTask(title, userId);
+    // await emailQueue.add({
+    //   userId: userId,
+    //   message: `Task "${title}" created successfully`,
+    // });
+    logger.info(`Task created: ${title} by user ${userId}`);
+    return result;
+  } catch (err) {
+    console.log(err);
+    throw err;
+  }
 };
 
 const getAllTask = async (userId) => {
