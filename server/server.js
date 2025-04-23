@@ -25,6 +25,7 @@ import {
   createTask,
   deleteTask,
   getAllTask,
+  getTasksPag,
   updateStatus,
 } from "../controllers/taskController.js";
 
@@ -135,7 +136,7 @@ app.get("/weatherMe/history", Auth, async (req, res) => {
 app.post("/taskNest", Auth, validate(taskSchema), createTask);
 
 /* Запрос список задач с БД */
-app.get("/taskNest", Auth, getAllTask);
+app.get("/taskNest", Auth, getTasksPag);
 
 /* Изменение статуса задачи (выполнено / не выполнено)*/
 app.put("/taskNest", Auth, updateStatus);

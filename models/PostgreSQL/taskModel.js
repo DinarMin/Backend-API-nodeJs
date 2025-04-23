@@ -31,4 +31,27 @@ const deleteTask = (id, userId) => {
   );
 };
 
-export default { createTask, getAllTask, updateStatus, deleteTask };
+const getTasksPag = async (userId, limit, offset) => {
+  const res = await pool.query(
+    "SELECT * FROM tasks WHERE user_id = $1 ORDER BY id LIMIT $2 OFFSET $3",
+    [userId, limit, offset]
+  );
+  return res.rows;
+};
+
+const getTotalPag = async (userId) => {
+  const res = await pool.query(
+    "SELECT COUNT(*) FROM tasks WHERE user_id = $1",
+    [userId]
+  );
+  return res.rows[0].count;
+};
+
+export default {
+  createTask,
+  getAllTask,
+  updateStatus,
+  deleteTask,
+  getTasksPag,
+  getTotalPag,
+};

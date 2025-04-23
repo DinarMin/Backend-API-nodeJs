@@ -6,7 +6,7 @@ export const createTask = async (req, res) => {
     const { title } = req.body;
     const result = await taskService.createTask(title, req.userId);
     logger.info(`Задача успешно добавлена! userid: ${req.userId} ${result}`);
-    res.status(201).json({ message: "Задача успешно добавлена", result});
+    res.status(201).json({ message: "Задача успешно добавлена", result });
   } catch (err) {
     console.error("Ошибка при создании задачи:", err);
     logger.warn(
@@ -48,5 +48,17 @@ export const deleteTask = async (req, res) => {
     res.status(204).end();
   } catch (error) {
     res.status(404).json(error.message);
+  }
+};
+
+export const getTasksPag = async (req, res) => {
+  try {
+    const { page = 1, limit = 10 } = req.query;
+    const userId = req.userId;
+    const result = await taskService.getTasksPag(userId, page, limit);
+    logger.info(`Запрос задач успешно прошла. user ${userId}`);
+    res.status(200).json(result);
+  } catch (error) {
+    res.status(400).json(error.message);
   }
 };

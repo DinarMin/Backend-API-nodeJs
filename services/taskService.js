@@ -47,4 +47,16 @@ const deleteTask = async (req) => {
   }
 };
 
-export default { createTask, getAllTask, updateStatus, deleteTask };
+const getTasksPag = async (userId, page, limit) => {
+  const offset = (page - 1) * limit;
+  const tasks = await taskModel.getTasksPag(userId, limit, offset);
+  const total = await taskModel.getTotalPag(userId);
+  return {
+    tasks,
+    total: parseInt(total),
+    page: parseInt(page),
+    pages: Math.ceil(total / limit),
+  };
+};
+
+export default { createTask, getAllTask, updateStatus, deleteTask, getTasksPag };
