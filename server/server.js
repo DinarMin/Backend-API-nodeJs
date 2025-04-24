@@ -7,27 +7,16 @@ import fs from "fs";
 import https from "https";
 import http from "http";
 
-import User from "../models/User.js";
+import User from "../models/Mongo/User.js";
 import { Auth } from "../utils/auth.js";
-import Task from "../models/Task.js";
-import {
-  validate,
-  weatherSchema,
-  taskSchema,
-} from "../validations/validation.js";
+import Task from "../models/Mongo/Task.js";
+import { validate, weatherSchema } from "../validations/validation.js";
 import logger from "../utils/logger.js";
 import checkPermissions from "../utils/rbac.js";
 import pool from "../db/postgres.js";
-import routesCalculation from "../routes/calculator.js";
-
+import routesCalculation from "../routes/calculatorRoutes.js";
 import { userController } from "../controllers/userController.js";
-import {
-  createTask,
-  deleteTask,
-  getAllTask,
-  getTasksPag,
-  updateStatus,
-} from "../controllers/taskController.js";
+import taskNestRoutes from "../routes/taskJestRoutes.js";
 
 export const app = express();
 app.use(cors());
@@ -70,6 +59,12 @@ async function startDB() {
 
 /* Обработка регистрации и авторизации */
 app.post("/", userController);
+
+/* Роутер задач */
+app.use("/taskNest", taskNestRoutes);
+
+/* Роутер калькулятора */
+app.use("/api/calculate", routesCalculation);
 
 /* Обработка запроса на авторизованного юзера с Middleware */
 app.get("/api/protected", Auth, async (req, res) => {
@@ -132,18 +127,6 @@ app.get("/weatherMe/history", Auth, async (req, res) => {
   }
 });
 
-/* Добавление задачи в БД */
-app.post("/taskNest", Auth, validate(taskSchema), createTask);
-
-/* Запрос список задач с БД */
-app.get("/taskNest", Auth, getTasksPag);
-
-/* Изменение статуса задачи (выполнено / не выполнено)*/
-app.put("/taskNest", Auth, updateStatus);
-
-/* Удаление задачи из БД */
-app.delete("/taskNest", Auth, deleteTask);
-
 /* Запрос список всех юзеров по админ роли */
 app.get(
   "/api/admin/users",
@@ -167,9 +150,6 @@ app.get(
     res.status(200).json(tasks);
   }
 );
-
-/* Обработка запроса с роутом Калькулятор */
-app.use("/api/calculate", routesCalculation);
 
 app.use((err, req, res, next) => {
   console.error("Необработанная ошибка:", err);

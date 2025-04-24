@@ -598,3 +598,7 @@
 {"level":"info","message":"Запрос задач успешно прошла. user 180","timestamp":"2025-04-23T11:49:15.908Z"}
 {"level":"info","message":"Запрос задач успешно прошла. user 181","timestamp":"2025-04-23T11:49:48.022Z"}
 {"level":"info","message":"Запрос задач успешно прошла. user 182","timestamp":"2025-04-23T11:51:49.874Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: Postgres9@gmail.com","timestamp":"2025-04-24T12:08:47.122Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: Postgres9@gmail.com","timestamp":"2025-04-24T12:09:01.844Z"}
+{"level":"info","message":"Task created: тестовое 12341242 by user 183","timestamp":"2025-04-24T12:09:24.669Z"}
+{"level":"info","message":"Задача успешно добавлена! userid: 183 [object Object]","timestamp":"2025-04-24T12:09:24.669Z"}

@@ -1,5 +1,5 @@
 import Joi from "joi";
-import logger from "../utils/logger";
+import logger from "../utils/logger.js";
 
 export const registerSchema = Joi.object({
   name: Joi.string().min(3).max(20).required(),
