@@ -16,7 +16,9 @@ import checkPermissions from "../utils/rbac.js";
 import pool from "../db/postgres.js";
 import routesCalculation from "../routes/calculatorRoutes.js";
 import { userController } from "../controllers/userController.js";
-import taskNestRoutes from "../routes/taskJestRoutes.js";
+import taskNestRoutes from "../routes/taskRoutes.js";
+import productRoutes from "../routes/productRoutes.js";
+import cartRoutes from "../routes/cartRoutes.js";
 
 export const app = express();
 app.use(cors());
@@ -66,6 +68,14 @@ app.use("/taskNest", taskNestRoutes);
 /* Роутер калькулятора */
 app.use("/api/calculate", routesCalculation);
 
+/* Роутеры магазина ------------------------- */
+
+/* Роутер продуктов */
+app.use("/products", productRoutes);
+
+/* Роутер корзины */
+app.use("/cart", cartRoutes);
+
 /* Обработка запроса на авторизованного юзера с Middleware */
 app.get("/api/protected", Auth, async (req, res) => {
   try {
@@ -82,6 +92,8 @@ app.get("/api/protected", Auth, async (req, res) => {
     console.error(err);
   }
 });
+
+/* Погода --------------------------------- */
 
 /* Обработка запроса на получение данных о погоде, в теле запроса отправляется название города  */
 app.post("/weatherMe", Auth, validate(weatherSchema), async (req, res) => {
