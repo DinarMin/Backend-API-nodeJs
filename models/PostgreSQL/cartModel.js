@@ -1,6 +1,6 @@
 import pool from "../../db/postgres.js";
 
-const addToCart = async () => {
+const addToCart = async (userId, productId, quantity) => {
   const res = await pool.query(
     "INSERT INTO cart (user_id, product_id, quantity) VALUES ($1, $2, $3) RETURNING *",
     [userId, productId, quantity]

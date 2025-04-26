@@ -21,4 +21,4 @@ export const getCart = async (req, res) => {
   }
 };
 
-export default { addToCart, getCart};
+export default { addToCart, getCart };
