@@ -19,6 +19,7 @@ import { userController } from "../controllers/userController.js";
 import taskNestRoutes from "../routes/taskRoutes.js";
 import productRoutes from "../routes/productRoutes.js";
 import cartRoutes from "../routes/cartRoutes.js";
+import orderRoutes from "../routes/orderRoutes.js";
 
 export const app = express();
 app.use(cors());
@@ -75,6 +76,9 @@ app.use("/products", productRoutes);
 
 /* Роутер корзины */
 app.use("/cart", cartRoutes);
+
+/* Роутер заказа */
+app.use("/orders", orderRoutes);  
 
 /* Обработка запроса на авторизованного юзера с Middleware */
 app.get("/api/protected", Auth, async (req, res) => {
