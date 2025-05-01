@@ -12,11 +12,11 @@ const logger = winston.createLogger({
   ),
   transports: [
     new winston.transports.File({ filename: "app.log" }),
-    new winston.transports.MongoDB({
-      db: process.env.DBURL,
-      collection: "logs",
-      level: "info",
-    }),
+    // new winston.transports.MongoDB({
+    //   db: process.env.DBURL,
+    //   collection: "logs",
+    //   level: "info",
+    // }),
   ],
 });
 
