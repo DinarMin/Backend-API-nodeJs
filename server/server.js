@@ -62,14 +62,14 @@ http.createServer(app).listen(3000, () => {
 
 /* Подключение к базы данных MongoDB */
 
-async function startDB() {
-  try {
-    await mongoose.connect(process.env.DBURL);
-    console.log("Успешно подключена к MongoDB");
-  } catch (e) {
-    console.log(e + "Подключение прервано");
-  }
-}
+// async function startDB() {
+//   try {
+//     await mongoose.connect(process.env.DBURL);
+//     console.log("Успешно подключена к MongoDB");
+//   } catch (e) {
+//     console.log(e + "Подключение прервано");
+//   }
+// }
 
 // startDB();
 
