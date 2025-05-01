@@ -1,7 +1,6 @@
-import pool from "../../db/postgres";
+import pool from "../../db/postgres.js";
 
 const getProducts = async () => {
-  console.log("дошла до запроса в базу");
   const res = await pool.query("SELECT * FROM products");
   return res.rows;
 };

@@ -6,6 +6,7 @@ import axios from "axios";
 import fs from "fs";
 import https from "https";
 import http from "http";
+import rateLimit from "express-rate-limit";
 
 import User from "../models/Mongo/User.js";
 import { Auth } from "../utils/auth.js";
@@ -26,6 +27,18 @@ app.use(cors());
 app.use(express.json());
 
 dotenv.config();
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  handler: (req, res) => {
+    res.status(429).json({
+      success: false,
+      message: "Слишком много запросов. Попробуйте позже.",
+    });
+  },
+});
+app.use("/", limiter);
 
 const options = {
   key: fs.readFileSync("key.pem"),
@@ -78,7 +91,7 @@ app.use("/products", productRoutes);
 app.use("/cart", cartRoutes);
 
 /* Роутер заказа */
-app.use("/orders", orderRoutes);  
+app.use("/orders", orderRoutes);
 
 /* Обработка запроса на авторизованного юзера с Middleware */
 app.get("/api/protected", Auth, async (req, res) => {

@@ -4,7 +4,12 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const { Pool } = pg;
-const pool = new Pool();
+const pool = new Pool({
+  connectionString: process.env.PGURL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+});
 
 pool.on("connect", () => {
   console.log("Успешный запрос к базам PostgreSQL");
