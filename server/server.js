@@ -7,6 +7,7 @@ import fs from "fs";
 import https from "https";
 import http from "http";
 import rateLimit from "express-rate-limit";
+import helmet from "helmet";
 
 import User from "../models/Mongo/User.js";
 import { Auth } from "../utils/auth.js";
@@ -39,6 +40,7 @@ const limiter = rateLimit({
   },
 });
 app.use("/", limiter);
+app.use(helmet());
 
 const options = {
   key: fs.readFileSync("key.pem"),
