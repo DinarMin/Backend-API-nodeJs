@@ -7,16 +7,18 @@ const create = async ({ name, email, hashedPassword, role }) => {
       [name, email, hashedPassword, role || "user"]
     );
   } catch (err) {
-    console.log(err);
+    throw err;
   }
 };
 
 const check = async (email) => {
   try {
-    const result = await pool.query("SELECT * FROM users WHERE email = $1", [email]);
+    const result = await pool.query("SELECT * FROM users WHERE email = $1", [
+      email,
+    ]);
     return result;
   } catch (err) {
-    console.log(err);
+    throw err;
   }
 };
 export default { create, check };

@@ -603,3 +603,6 @@
 {"level":"info","message":"Task created: тестовое 12341242 by user 183","timestamp":"2025-04-24T12:09:24.669Z"}
 {"level":"info","message":"Задача успешно добавлена! userid: 183 [object Object]","timestamp":"2025-04-24T12:09:24.669Z"}
 {"level":"info","message":"Авторизация прошла успешно! email: NailtestAPI@gmail.com","timestamp":"2025-05-11T15:06:29.563Z"}
+{"level":"info","message":"Авторизация прошла успешно! email: NailtestAPI@gmail.com","timestamp":"2025-05-11T15:08:42.911Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: NailtestAPI@gmail.com","timestamp":"2025-05-11T15:10:46.229Z"}
+{"level":"info","message":"Регистрация прошла успешно! email: NailtsestAPI@gmail.com","timestamp":"2025-05-11T15:14:52.247Z"}
