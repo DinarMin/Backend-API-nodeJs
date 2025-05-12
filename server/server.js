@@ -2,6 +2,7 @@ import { app } from "../app/app.js";
 import https from "https";
 import http from "http";
 import fs from "fs";
+import { runMigrations } from "../utils/runMigrations.js";
 
 const options = {
   key: fs.readFileSync("key.pem"),
@@ -15,6 +16,8 @@ https.createServer(options, app).listen(443, () => {
 http.createServer(app).listen(3000, () => {
   console.log("Server on port 3000 (HTTP)");
 });
+
+runMigrations();
 
 /* Создаем приложение на express */
 
