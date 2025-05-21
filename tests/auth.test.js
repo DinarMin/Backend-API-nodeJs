@@ -1,5 +1,5 @@
 import request from "supertest";
-import { app } from "../server/server.js";
+import { app } from "../app/app.js";
 import pool from "../db/postgres.js";
 import bcrypt from "bcryptjs";
 
@@ -10,10 +10,11 @@ describe("Auth API", () => {
 
   afterAll(async () => {
     await pool.query("DELETE FROM users");
+    await pool.end();
   });
 
   it("Регистрация нового пользователя", async () => {
-    const res = await request(app).post("/").send({
+    const res = await request(app).post("/auth").send({
       name: "JestTest",
       email: "TestJest@gmail.net",
       password: "123456",
@@ -23,14 +24,14 @@ describe("Auth API", () => {
   });
 
   it("Ошибка, такая почта уже существует", async () => {
-    await request(app).post("/").send({
+    await request(app).post("/auth").send({
       name: "JestTest",
       email: "TestJest@gmail.net",
       password: "123456",
     });
     const res = await request(app)
-      .post("/")
-      .send({ name: "TestJest", email: "TestJest@gmail.net", password: "12345" });
+      .post("/auth")
+      .send({ name: "TestJest", email: "TestJest@gmail.net", password: "123456" });
     expect(res.statusCode).toBe(400);
     expect(res.body.error).toBe("Email already exists");
   });
@@ -42,7 +43,7 @@ describe("Auth API", () => {
       ["test2", "test2@gmail.net", hashedPassword]
     );
     const res = await request(app)
-      .post("/")
+      .post("/auth")
       .send({ email: "test2@gmail.net", password: "123456" });
     expect(res.statusCode).toBe(200);
     expect(res.body.token).toBeDefined();
@@ -50,9 +51,9 @@ describe("Auth API", () => {
 
   it("Ошибка, не правильный пароль", async () => {
     const res = await request(app)
-      .post("/")
+      .post("/auth")
       .send({ email: "test2@gmail.net", password: "123456789" });
     expect(res.statusCode).toBe(401);
-    expect(res.body.error).toBe("Invalid credentials");
+    expect(res.body.error).toBe("Неверный логин или пароль!");
   });
 });

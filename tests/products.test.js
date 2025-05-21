@@ -1,6 +1,6 @@
 import request from "supertest";
 import pool from "../db/postgres.js";
-import { app } from "../server/server.js";
+import { app } from "../app/app.js";
 
 describe("Products API", () => {
   beforeAll(async () => {

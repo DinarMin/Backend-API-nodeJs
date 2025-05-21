@@ -17,5 +17,4 @@ export const runMigrations = async () => {
       console.error(`Error executing migration ${file}:`, error);
     }
   }
-  await pool.end();
 };

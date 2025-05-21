@@ -1,5 +1,5 @@
 import request from "supertest";
-import { app } from "../server/server.js";
+import { app } from "../app/app.js";
 import pool from "../db/postgres.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";

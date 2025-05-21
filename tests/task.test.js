@@ -1,5 +1,5 @@
 import request from "supertest";
-import { app } from "../server/server.js";
+import { app } from "../app/app.js";
 import pool from "../db/postgres.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
@@ -44,7 +44,7 @@ describe("Tasks API", () => {
     ]);
     const res = await request(app).get("/taskNest").set("Authorization", token);
     expect(res.statusCode).toBe(200);
-    expect(res.body.length).toBeGreaterThan(0);
+    expect(res.body.tasks.length).toBeGreaterThan(0);
   });
 
   it("Обновление статуса задачи", async () => {
